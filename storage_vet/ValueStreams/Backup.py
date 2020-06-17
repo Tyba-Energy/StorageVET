@@ -14,12 +14,8 @@ __version__ = '2.1.1.1'
 
 
 from .ValueStream import ValueStream
-try:
-    import Constraint as Const
-    import Library as Lib
-except ModuleNotFoundError:
-    import storagevet.Constraint as Const
-    import storagevet.Library as Lib
+from .. import Constraint as Const
+from .. import Library as Lib
 import pandas as pd
 import numpy as np
 import logging

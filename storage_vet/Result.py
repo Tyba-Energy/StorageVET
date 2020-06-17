@@ -19,7 +19,7 @@ import copy
 import numpy as np
 from pathlib import Path
 import os
-import Finances as Fin
+from . import Finances as Fin
 
 e_logger = logging.getLogger('Error')
 u_logger = logging.getLogger('User')

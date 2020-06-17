@@ -22,8 +22,8 @@ import os.path
 from pathlib import Path
 from datetime import datetime
 from matplotlib.font_manager import FontProperties
-from Finances import Financial
-import Library as Lib
+from .Finances import Financial
+from . import Library as Lib
 
 e_logger = logging.getLogger('Error')
 u_logger = logging.getLogger('User')

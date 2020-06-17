@@ -15,13 +15,13 @@ __email__ = ['hnathwani@epri.com', 'egiarta@epri.com', 'mevans@epri.com']
 __version__ = '2.1.1.1'
 
 import argparse
-import Scenario
-from Params import Params
-from Result import Result
-import Finances as Fin
+from . import Scenario
+from .Params import Params
+from .Result import Result
+from . import Finances as Fin
 import logging
 import time
-from Visualization import Visualization
+from .Visualization import Visualization
 
 e_logger = logging.getLogger('Error')
 u_logger = logging.getLogger('User')

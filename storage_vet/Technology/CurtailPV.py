@@ -15,10 +15,7 @@ __version__ = '2.1.1.1'
 from .DER import DER
 import cvxpy as cvx
 import pandas as pd
-try:
-    import Library as Lib
-except ModuleNotFoundError:
-    import storagevet.Library as Lib
+from .. import Library as Lib
 
 
 class CurtailPV(DER):

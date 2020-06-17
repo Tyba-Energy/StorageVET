@@ -12,29 +12,29 @@ __maintainer__ = ['Halley Nathwani', 'Evan Giarta', 'Miles Evans']
 __email__ = ['hnathwani@epri.com', 'egiarta@epri.com', 'mevans@epri.com']
 __version__ = '2.1.1.1'
 
-from ValueStreams.DAEnergyTimeShift import DAEnergyTimeShift
-from ValueStreams.FrequencyRegulation import FrequencyRegulation
-from ValueStreams.NonspinningReserve import NonspinningReserve
-from ValueStreams.DemandChargeReduction import DemandChargeReduction
-from ValueStreams.EnergyTimeShift import EnergyTimeShift
-from ValueStreams.SpinningReserve import SpinningReserve
-from ValueStreams.Backup import Backup
-from ValueStreams.Deferral import Deferral
-from ValueStreams.DemandResponse import DemandResponse
-from ValueStreams.ResourceAdequacy import ResourceAdequacy
-from ValueStreams.UserConstraints import UserConstraints
-from ValueStreams.VoltVar import VoltVar
-from ValueStreams.LoadFollowing import LoadFollowing
-from Technology.BatteryTech import BatteryTech
-from Technology.CAESTech import CAESTech
-from Technology.CurtailPV import CurtailPV
-from Technology.ICE import ICE
-from Technology.Load import Load
+from .ValueStreams.DAEnergyTimeShift import DAEnergyTimeShift
+from .ValueStreams.FrequencyRegulation import FrequencyRegulation
+from .ValueStreams.NonspinningReserve import NonspinningReserve
+from .ValueStreams.DemandChargeReduction import DemandChargeReduction
+from .ValueStreams.EnergyTimeShift import EnergyTimeShift
+from .ValueStreams.SpinningReserve import SpinningReserve
+from .ValueStreams.Backup import Backup
+from .ValueStreams.Deferral import Deferral
+from .ValueStreams.DemandResponse import DemandResponse
+from .ValueStreams.ResourceAdequacy import ResourceAdequacy
+from .ValueStreams.UserConstraints import UserConstraints
+from .ValueStreams.VoltVar import VoltVar
+from .ValueStreams.LoadFollowing import LoadFollowing
+from .Technology.BatteryTech import BatteryTech
+from .Technology.CAESTech import CAESTech
+from .Technology.CurtailPV import CurtailPV
+from .Technology.ICE import ICE
+from .Technology.Load import Load
 import numpy as np
 import pandas as pd
-import Finances as Fin
+from . import Finances as Fin
 import cvxpy as cvx
-import Library as Lib
+from . import Library as Lib
 from prettytable import PrettyTable
 import time
 import sys

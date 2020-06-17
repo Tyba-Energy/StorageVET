@@ -16,7 +16,7 @@ __version__ = '2.1.1.1'
 import pandas as pd
 import numpy as np
 import logging
-import Library as Lib
+from . import Library as Lib
 
 
 SATURDAY = 5

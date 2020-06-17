@@ -17,12 +17,8 @@ import cvxpy as cvx
 import pandas as pd
 import logging
 import numpy as np
-try:
-    import Constraint as Const
-    import Library as Lib
-except ModuleNotFoundError:
-    import storagevet.Constraint as Const
-    import storagevet.Library as Lib
+from .. import Constraint as Const
+from .. import Library as Lib
 
 u_logger = logging.getLogger('User')
 e_logger = logging.getLogger('Error')

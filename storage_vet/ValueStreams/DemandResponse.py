@@ -17,10 +17,7 @@ import pandas as pd
 import cvxpy as cvx
 import numpy as np
 import logging
-try:
-    import Constraint as Const
-except ModuleNotFoundError:
-    import storagevet.Constraint as Const
+from .. import Constraint as Const
 # import heapq
 
 u_logger = logging.getLogger('User')

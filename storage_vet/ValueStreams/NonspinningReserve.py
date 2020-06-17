@@ -17,10 +17,7 @@ import numpy as np
 import cvxpy as cvx
 import pandas as pd
 import logging
-try:
-    import Library as Lib
-except ModuleNotFoundError:
-    import storagevet.Library as Lib
+from .. import Library as Lib
 
 u_logger = logging.getLogger('User')
 e_logger = logging.getLogger('Error')

@@ -12,7 +12,7 @@ __maintainer__ = ['Halley Nathwani', 'Evan Giarta', 'Miles Evans']
 __email__ = ['hnathwani@epri.com', 'egiarta@epri.com', 'mevans@epri.com']
 __version__ = '2.1.1.1'
 
-import Library as sh
+from . import Library as sh
 import logging
 
 e_logger = logging.getLogger('Error')

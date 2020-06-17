@@ -12,10 +12,10 @@ __maintainer__ = ['Halley Nathwani', 'Evan Giarta', 'Miles Evans']
 __email__ = ['hnathwani@epri.com', 'egiarta@epri.com', 'mevans@epri.com']
 __version__ = '2.1.1.1'
 
-from ValueStreams.ValueStream import ValueStream
+from .ValueStream import ValueStream
 import cvxpy as cvx
 import pandas as pd
-import Library as Lib
+from .. import Library as Lib
 import logging
 import numpy as np
 

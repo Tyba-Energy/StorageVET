@@ -15,12 +15,12 @@ __version__ = '2.1.1.1'
 from .ValueStream import ValueStream
 import logging
 import pandas as pd
-try:
-    import Constraint as Const
-    import Library as Lib
-except ModuleNotFoundError:
-    import storagevet.Constraint as Const
-    import storagevet.Library as Lib
+
+from .. import Constraint as Const
+from .. import Library as Lib
+
+
+
 
 u_logger = logging.getLogger('User')
 e_logger = logging.getLogger('Error')

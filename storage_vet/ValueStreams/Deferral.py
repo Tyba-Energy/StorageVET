@@ -16,7 +16,7 @@ import numpy as np
 import cvxpy as cvx
 from .ValueStream import ValueStream
 import pandas as pd
-import Library as Lib
+from .. import Library as Lib
 import logging
 
 u_logger = logging.getLogger('User')
